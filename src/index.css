@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scale-effect {
+  transition: transform 0.2s ease-in-out; /* Transition property for smooth animation */
+  transition-delay: 0s; /* Delay the background-color transition by 0.3s */
+}
+.scale-effect:hover {
+  transform: scale(1.15); /* Scale up by 5% on hover */
+}
+
+.scale-effect-bg {
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out; /* Transition property for smooth animation */
+  transition-delay: 0s, 0.1s; /* Delay the background-color transition by 0.3s */
+}
+.scale-effect-bg:hover {
+  transform: scale(1.05); /* Scale up by 5% on hover */
+  background-color: blue; 
+  /* Change the background color on hover */
+}
+
+.cardZoomOut{
+  transition: transform 0.2s ease-in-out; /* Transition property for smooth animation */
+  transition-delay: 0s; 
+}
+
+.cardZoomOut:hover{
+  transform: scale(1.02); 
+}
+
+.post-container {
+  height: 100vh; /* Example fixed height for each post */
+  overflow: hidden;
+}
